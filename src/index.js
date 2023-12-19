@@ -15,7 +15,9 @@ import {
 } from '../validation/validation.js';
 
 mongoose
-  .connect('mongodb+srv://qwerty:qwerty123@cluster0.imwpykw.mongodb.net/blog?retryWrites=true&w=majority')
+  .connect(
+    'mongodb+srv://qwerty:qwerty123@cluster0.imwpykw.mongodb.net/blog?retryWrites=true&w=majority'
+  )
   .then(() => console.log('DB OK'))
   .catch((err) => console.log('DB ERROR', err));
 
